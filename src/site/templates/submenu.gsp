@@ -1,3 +1,4 @@
+<% System.out.println "submenu.gsp" %>
 <%
     def menu = content.menu[content['jbake-menu']]
 

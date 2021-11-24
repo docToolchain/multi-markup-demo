@@ -1,3 +1,4 @@
+<% System.out.println "feedback.gsp" %>
 <style>
 .feedback--answer {
     display: inline-block;
@@ -19,8 +20,13 @@
 <%
     //let's build some urls.
     //what's the correct source file name with path?
-    def sourceFileName = content?.uri?.replaceAll("[.]"+content.outfilesuffix[1..-1],content.docfilesuffix)
-    def subject = java.net.URLEncoder.encode("Docs: Feedback for '${content?.title}'", "UTF-8")
+    try {
+        def sourceFileName = content?.uri?.replaceAll("[.]" + content.outfilesuffix[1..-1], content.docfilesuffix)
+
+        def subject = java.net.URLEncoder.encode("Docs: Feedback for '${content?.title}'", "UTF-8")
+    } catch (Exception e) {
+        System.out.println "---------------"
+    }
 %>
 <div class="d-print-none">
     <h2 class="feedback--title">Feedback</h2>

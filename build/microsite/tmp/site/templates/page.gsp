@@ -1,3 +1,4 @@
+<% System.out.println "page.gsp" %>
 <!doctype html>
 <html lang="de">
 <%include "header.gsp"%>

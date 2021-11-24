@@ -1,4 +1,5 @@
-    <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+<% System.out.println "main.gsp" %>
+<nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
         <ol class="breadcrumb spb-1">
             <!--li aria-current="page" class="breadcrumb-item active">
                 <a href="https://example.docsy.dev/docs/">Documentation</a>
@@ -11,11 +12,16 @@
     <div class="td-content">
         <p>
             <%
-                def splitBody = content.body
-                if (splitBody.contains("<!-- endtoc -->")) {
+                try {
+                    def splitBody = content.body
+
+                    if (splitBody.contains("<!-- endtoc -->")) {
                     splitBody = splitBody.split("(?ms)<!-- endtoc -->", 2)[1]
+                    }
+                    out << splitBody
+                } catch (Exception e) {
+                    System.out.println ">>>>> e"
                 }
-                out << splitBody
             %>
         </p>
 

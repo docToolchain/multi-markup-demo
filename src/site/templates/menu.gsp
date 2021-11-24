@@ -1,3 +1,4 @@
+<% System.out.println "menu.gsp" %>
 <%
     def menu = [:]
     def entriesMap = [:]

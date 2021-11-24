@@ -1,3 +1,4 @@
+<% System.out.println "header.gsp" %>
 <head>
   <%
       //let's fix the context root
