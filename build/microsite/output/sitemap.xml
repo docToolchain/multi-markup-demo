@@ -7,6 +7,11 @@
     </url>
 
     <url>
+    	<loc>https://localhost/demo/markdown.html</loc>
+    	<lastmod>2021-11-24</lastmod>
+    </url>
+
+    <url>
     	<loc>https://localhost/search.html</loc>
     	<lastmod>2021-11-24</lastmod>
     </url>
