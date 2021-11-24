@@ -1,7 +1,9 @@
 title=Weekly Links #2
-type=page_toc
+type=page
 status=published
-jbake-menu=Demo
+menu=Demo
+order=20
+jbake-menu=Demo 2
 jbake-order=20
 ~~~~~~
 
