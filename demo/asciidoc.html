@@ -154,7 +154,7 @@
         <ul class="navbar-nav mt-2 mt-lg-0">
     <li class="nav-item mr-4 mb-2 mb-lg-0"><!--img src="../images/status.png" alt="status" width="16" height="16" onerror="this.style.display='none'"--></li>
             <!--
-            [Demo:[[title:HTML Demo, order:30, filename:null, uri:demo/html.html], [title:Markdown Demo, order:20, filename:null, uri:demo/markdown.html], [title:AsciiDoc Demo, order:10, filename:null, uri:demo/asciidoc.html]], -:[[title:search, order:0, filename:null, uri:search.html]]]
+            [Demo:[[title:Markdown Demo, order:20, filename:null, uri:demo/markdown.html], [title:HTML Demo, order:30, filename:null, uri:demo/html.html], [title:AsciiDoc Demo, order:10, filename:null, uri:demo/asciidoc.html]], -:[[title:search, order:0, filename:null, uri:search.html]]]
             -->
 
             <li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -256,19 +256,22 @@
         <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoc_demo">AsciiDoc Demo</a></li>
-<li><a href="#first">First Steps with AsciiDoc</a>
+<li><a href="#_asciidoc_demo">AsciiDoc Demo</a>
 <ul class="sectlevel2">
-<li><a href="#_lists_upon_lists">Lists Upon Lists</a></li>
+<li><a href="#first">First Steps with AsciiDoc</a></li>
+<li><a href="#were_back">We&#8217;re back!</a></li>
 </ul>
 </li>
-<li><a href="#_were_back">We&#8217;re back!</a>
-<ul class="sectlevel2">
-<li><a href="#_quotes">``Quotes''</a></li>
+<li><a href="#included_section">Included Section</a>
+<ul class="sectlevel3">
+<li><a href="#quotes">``Quotes''</a></li>
 </ul>
 </li>
-<li><a href="#literally">Getting Literal</a></li>
+<li><a href="#literally">Getting Literal</a>
+<ul class="sectlevel2">
 <li><a href="#wrapup">Wrap-up</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -293,25 +296,16 @@
 <h2 id="_asciidoc_demo">AsciiDoc Demo</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dan Allen &lt;<a href="mailto:thedoc@asciidoctor.org">thedoc@asciidoctor.org</a>&gt;
-:description: A demo of Asciidoctor. This document<br>
-              exercises numerous features of AsciiDoc<br>
-              to test Asciidoctor compliance.
-:library: Asciidoctor
-:source-highlighter: coderay
-:idprefix:
-:stylesheet: asciidoc.css
-:imagesdir: images
-:plus: &#43;</p>
+<p>Dan Allen &lt;<a href="mailto:thedoc@asciidoctor.org">thedoc@asciidoctor.org</a>&gt;</p>
 </div>
 <div class="paragraph lead">
-<p>This is a demonstration of {library}. And this is the preamble of this document.</p>
+<p>This is a demonstration of Asciidoctor. And this is the preamble of this document.</p>
 </div>
 <div id="purpose" class="sidebarblock">
 <div class="content">
 <div class="title">Purpose</div>
 <div class="paragraph">
-<p>This document exercises many of the features of AsciiDoc to test the {library} implementation.</p>
+<p>This document exercises many of the features of AsciiDoc to test the Asciidoctor implementation.</p>
 </div>
 </div>
 </div>
@@ -339,11 +333,8 @@ Items marked with TODO are either not yet supported or a work in progress.
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="first">First Steps with <a href="http://asciidoc.org">AsciiDoc</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="first">First Steps with <a href="http://asciidoc.org">AsciiDoc</a></h3>
 <div class="ulist">
 <div class="title">Inline markup</div>
 <ul>
@@ -407,8 +398,8 @@ Items marked with TODO are either not yet supported or a work in progress.
 just end it in a &#43; sign<br>
 and continue typing on the next line.</p>
 </div>
-<div class="sect2">
-<h3 id="_lists_upon_lists">Lists Upon Lists</h3>
+<div class="sect3">
+<h4 id="lists_upon_lists">Lists Upon Lists</h4>
 <div class="ulist">
 <div class="title">Adjacent lists</div>
 <ul>
@@ -530,24 +521,41 @@ first level</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_were_back">We&#8217;re back!</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="were_back">We&#8217;re back!</h3>
 <div class="paragraph">
-<p>Want to see a <span class="image"><img src="..//images/tiger.png" alt="Tiger"></span>?</p>
+<p>Want to see a <span class="image"><img src="../images/tiger.png" alt="Tiger"></span>?</p>
 </div>
 <div class="paragraph">
 <p>Do you feel safer with the tiger in a box?</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="..//images/tiger.png" alt="tiger">
+<img src="../images/tiger.png" alt="tiger">
 </div>
 <div class="title">Figure 1. Tiger in a box</div>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="included_section">Included Section</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved directive in &lt;stdin&gt; - include::include.asciidoc.txt[]</p>
+<p>Look, I came from out of the <span class="blue">blue</span>!</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>I&#8217;m keepin' it open.</p>
+</div>
+<div class="paragraph">
+<p>An 'open block', like this one, can contain other blocks.</p>
+</div>
+<div class="paragraph">
+<p>It can also act as any other block. (TODO)</p>
+</div>
+</div>
 </div>
 <div class="listingblock">
 <div class="title">Asciidoctor usage example, should contain 3 lines</div>
@@ -567,8 +575,8 @@ puts doc.render</code></pre>
 &lt;/div&gt;</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_quotes">``Quotes''</h3>
+<div class="sect3">
+<h4 id="quotes">``Quotes''</h4>
 <div class="quoteblock">
 <blockquote>
 <div class="paragraph">
@@ -628,11 +636,8 @@ puts doc.render</code></pre>
 </li>
 </ol>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="wrapup">Wrap-up</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="wrapup">Wrap-up</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -687,6 +692,7 @@ One more thing. Happy documenting!
 </div>
 <div class="paragraph">
 <p><a id="google"></a>When all else fails, head over to <a href="http://google.com" class="bare">http://google.com</a>.</p>
+</div>
 </div>
 </div>
 </div>
