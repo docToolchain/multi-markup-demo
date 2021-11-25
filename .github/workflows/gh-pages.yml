@@ -21,7 +21,7 @@ jobs:
       - name: generateSite
         run: ./dtcw generateSite
       - name: copyToPublic
-        run: cp -r ./build/pdf ./public
+        run: cp -r ./build/microsite/output ./public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
 #        if: ${{ github.ref == 'refs/heads/main' }}
