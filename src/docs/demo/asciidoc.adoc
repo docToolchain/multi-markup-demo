@@ -1,4 +1,3 @@
-:jbake-menu: Demo
 :jbake-order: 10
 :jbake-type: page_toc
 :jbake-status: published

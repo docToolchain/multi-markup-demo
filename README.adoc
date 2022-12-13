@@ -1,0 +1,23 @@
+== Multi-Markup-Demo
+
+This demo shows that docToolchain is not only capable of rendering AsciiDoc.
+Out of the boxfootnote:[thanx to jBake!] it can also render Markdown and HTML files.
+
+Since v2.1.0, docToolchain also supports convention over configuration for Markdown and HTML files.
+You can take a look at the generated meta-data in the `build/microsite/tmp/doc` folder.
+
+It can also render restructured text when python is installed.
+This is enabled throught the `additionalConverters` configuration.
+
+`additionalConverters` can also be used to add even more converters.
+
+To run this example, please execute the following, after cloning the project:
+
+[source, bash]
+----
+./dtcw.ps1 local generateSite
+----
+
+afterwards, open the file `build/microsite/output/index.html` in your local browser.
+
+

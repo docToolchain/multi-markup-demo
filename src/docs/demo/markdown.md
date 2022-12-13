@@ -1,10 +1,3 @@
-title=Weekly Links #2
-type=page
-jbake-title=Markdown Demo
-status=published
-jbake-menu=Demo
-jbake-order=20
----------
 
 ## Markdown Demo
 
@@ -14,6 +7,16 @@ jbake-order=20
 can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
 
 ----
+
+```shell
+ls
+```
+
+| a   | b   | c   |
+|-----|-----|-----|
+| d   | e   | f   |
+| g   | h   | i   |
+
 
 ## Overview
 
