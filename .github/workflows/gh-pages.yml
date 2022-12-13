@@ -28,6 +28,10 @@ jobs:
           pip list
           pip3 list
           python3 --version
+          which python
+          bash -c which python
+          bash -c pip3 list
+          bash -c pip3 install docutils
           ./dtcw generateSite
       - name: copyToPublic
         run: cp -r ./build/microsite/output ./public
