@@ -19,7 +19,7 @@ jobs:
       - name: setup
         run: chmod +x dtcw
       - name: prepare python
-        run: pip install docutils
+        run: pip3 install docutils
       - name: generateSite
         run: ./dtcw generateSite
       - name: copyToPublic
