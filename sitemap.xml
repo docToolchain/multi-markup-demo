@@ -3,27 +3,32 @@
 
     <url>
     	<loc>https://localhost/demo/html.html</loc>
-    	<lastmod>2021-11-26</lastmod>
-    </url>
-
-    <url>
-    	<loc>https://localhost/demo/standard.rst.html</loc>
-    	<lastmod>2021-11-26</lastmod>
+    	<lastmod>2022-12-13</lastmod>
     </url>
 
     <url>
     	<loc>https://localhost/demo/markdown.html</loc>
-    	<lastmod>2021-11-26</lastmod>
+    	<lastmod>2022-12-13</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://localhost/demo/standard.rst.html</loc>
+    	<lastmod>2022-12-13</lastmod>
     </url>
 
     <url>
     	<loc>https://localhost/demo/asciidoc.html</loc>
-    	<lastmod>2021-11-26</lastmod>
+    	<lastmod>2022-12-13</lastmod>
     </url>
 
     <url>
     	<loc>https://localhost/search.html</loc>
-    	<lastmod>2021-11-26</lastmod>
+    	<lastmod>2022-12-13</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://localhost/lunrjsindex.html</loc>
+    	<lastmod>2022-12-13</lastmod>
     </url>
 
 </urlset>
